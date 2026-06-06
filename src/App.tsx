@@ -2,7 +2,6 @@ import React from 'react';
 import { useScreenInit } from './useScreenInit';
 import { Background } from './components/effects/Background';
 import { Particles } from './components/effects/Particles';
-import { CustomCursor } from './components/effects/CustomCursor';
 import { ScrollProgress } from './components/effects/ScrollProgress';
 import { Loader } from './components/effects/Loader';
 import { Navbar } from './components/Navbar';
@@ -25,7 +24,6 @@ export function App() {
       <Loader />
       <Background />
       <Particles />
-      <CustomCursor />
       <ScrollProgress />
       <Navbar />
 

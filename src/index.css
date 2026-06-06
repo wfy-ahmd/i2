@@ -61,12 +61,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #FF3E7A;
 }
-/* Hide native cursor on desktop where custom cursor active */
-@media (min-width: 1024px) {
-  .custom-cursor-active * {
-    cursor: none !important;
-  }
-}
+
 ::selection {
   background: rgba(255, 62, 122, 0.3);
   color: #ffffff;

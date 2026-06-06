@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 export function Loader() {
   const [done, setDone] = useState(false);
   useEffect(() => {
-    const t = setTimeout(() => setDone(true), 1400);
+    const t = setTimeout(() => setDone(true), 400);
     return () => clearTimeout(t);
   }, []);
   return (
@@ -14,7 +14,7 @@ export function Loader() {
           opacity: 0
         }}
         transition={{
-          duration: 0.6,
+          duration: 0.3,
           ease: [0.22, 1, 0.36, 1]
         }}
         className="fixed inset-0 z-[100] flex items-center justify-center bg-background">
@@ -30,7 +30,7 @@ export function Loader() {
               opacity: 1
             }}
             transition={{
-              duration: 0.5,
+              duration: 0.3,
               ease: [0.22, 1, 0.36, 1]
             }}
             className="font-heading text-6xl font-bold text-white">
@@ -47,7 +47,7 @@ export function Loader() {
                 x: '0%'
               }}
               transition={{
-                duration: 1.2,
+                duration: 0.4,
                 ease: [0.22, 1, 0.36, 1]
               }} />
             
